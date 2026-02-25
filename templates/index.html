@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Profile Priority Picker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>🎯 LinkedIn Profile Priority Picker</h1>
+
+<form method="POST">
+    <input type="text" name="skills" placeholder="Enter required skills (comma separated)" required>
+    <button type="submit">Find Best Candidates</button>
+</form>
+
+{% if ranked %}
+<h2>🏆 Top Matches</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Qualification</th>
+        <th>Experience</th>
+        <th>Score</th>
+    </tr>
+
+    {% for c in ranked %}
+    <tr>
+        <td>{{ c.name }}</td>
+        <td>{{ c.qualification }}</td>
+        <td>{{ c.experience }} yrs</td>
+        <td>{{ c.score }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+</body>
+</html>
