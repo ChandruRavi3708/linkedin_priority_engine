@@ -3,24 +3,28 @@
     "name": "Rahul Kumar",
     "qualification": "M.Tech",
     "experience": 5,
-    "skills": ["Python", "ML", "SQL"]
+    "skills": ["Python", "ML", "SQL"],
+    "profile_link": "https://www.linkedin.com/in/rahul-kumar"
   },
   {
     "name": "Anita Sharma",
     "qualification": "B.Tech",
     "experience": 3,
-    "skills": ["Python", "SQL"]
+    "skills": ["Python", "SQL"],
+    "profile_link": "https://www.linkedin.com/in/anita-sharma"
   },
   {
     "name": "Kiran Reddy",
     "qualification": "PhD",
     "experience": 2,
-    "skills": ["ML", "Python"]
+    "skills": ["ML", "Python"],
+    "profile_link": "https://www.linkedin.com/in/kiran-reddy"
   },
   {
     "name": "Sneha Iyer",
     "qualification": "M.Tech",
     "experience": 7,
-    "skills": ["Python", "ML", "SQL", "Deep Learning"]
+    "skills": ["Python", "ML", "SQL", "Deep Learning"],
+    "profile_link": "https://www.linkedin.com/in/sneha-iyer"
   }
 ]

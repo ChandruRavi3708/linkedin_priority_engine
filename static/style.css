@@ -12,7 +12,7 @@ form {
     margin: 20px;
 }
 
-input, select {
+input {
     padding: 10px;
     width: 300px;
 }
@@ -40,4 +40,17 @@ th, td {
 th {
     background: #0a66c2;
     color: white;
+}
+a {
+    text-decoration: none;
+    color: #0a66c2;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-link {
+    font-size: 16px;
 }

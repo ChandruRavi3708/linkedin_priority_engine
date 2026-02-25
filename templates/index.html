@@ -31,14 +31,24 @@
         <th>Qualification</th>
         <th>Experience</th>
         <th>Score</th>
+        <th>Profile</th>
     </tr>
 
     {% for c in ranked %}
     <tr>
-        <td>{{ c.name }}</td>
+        <td>
+            <a href="{{ c.profile_link }}" target="_blank" class="profile-link">
+                {{ c.name }}
+            </a>
+        </td>
         <td>{{ c.qualification }}</td>
         <td>{{ c.experience }} yrs</td>
         <td>{{ c.score }}</td>
+        <td>
+            <a href="{{ c.profile_link }}" target="_blank">
+                View Profile
+            </a>
+        </td>
     </tr>
     {% endfor %}
 </table>

@@ -14,6 +14,7 @@ class Candidate:
         self.qualification = data["qualification"]
         self.experience = data["experience"]
         self.skills = data["skills"]
+        self.profile_link = data.get("profile_link", "#")
         self.score = self.calculate_score(required_skills, preferred_qualification)
 
     def calculate_score(self, required_skills, preferred_qualification):
