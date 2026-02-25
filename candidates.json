@@ -16,5 +16,11 @@
     "qualification": "PhD",
     "experience": 2,
     "skills": ["ML", "Python"]
+  },
+  {
+    "name": "Sneha Iyer",
+    "qualification": "M.Tech",
+    "experience": 7,
+    "skills": ["Python", "ML", "SQL", "Deep Learning"]
   }
 ]

@@ -9,12 +9,22 @@
 <h1>🎯 LinkedIn Profile Priority Picker</h1>
 
 <form method="POST">
-    <input type="text" name="skills" placeholder="Enter required skills (comma separated)" required>
+    <input type="text" name="skills" placeholder="Required skills (comma separated)" required><br><br>
+
+    <input type="number" name="min_exp" placeholder="Minimum experience (years)" required><br><br>
+
+    <select name="qualification">
+        <option value="">Preferred Qualification</option>
+        <option value="PhD">PhD</option>
+        <option value="M.Tech">M.Tech</option>
+        <option value="B.Tech">B.Tech</option>
+    </select><br><br>
+
     <button type="submit">Find Best Candidates</button>
 </form>
 
 {% if ranked %}
-<h2>🏆 Top Matches</h2>
+<h2>🏆 Ranked Candidates</h2>
 <table>
     <tr>
         <th>Name</th>
