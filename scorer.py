@@ -44,7 +44,7 @@ class Candidate:
 
         return round(final_score, 2)
 
-    # Max heap behavior
+    # Max heap behavior is here
     def __lt__(self, other):
         return self.score > other.score
 
